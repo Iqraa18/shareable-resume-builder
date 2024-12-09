@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shareable Resume Builder</h1>
+
+        <!-- Form to Input Details -->
+        <div class="form-container">
+            <form id="resumeForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" placeholder="Your Phone Number" required>
+
+                <label for="summary">Summary:</label>
+                <textarea id="summary" placeholder="Brief summary about you"></textarea>
+
+                <label for="experience">Experience:</label>
+                <textarea id="experience" placeholder="Your Work Experience"></textarea>
+
+                <label for="education">Education:</label>
+                <textarea id="education" placeholder="Your Education Background"></textarea>
+
+                <button type="button" id="generateResume">Generate Resume</button>
+            </form>
+        </div>
+
+        <!-- Shareable Link -->
+        <div class="link-container">
+            <label for="shareableLink">Shareable Link:</label>
+            <input type="text" id="shareableLink" readonly>
+            <button id="copyLink">Copy Link</button>
+        </div>
+
+        <!-- Resume Preview -->
+        <div class="resume-container" id="resumePreview">
+            <h2 id="previewName">[Full Name]</h2>
+            <p id="previewEmail">[Email]</p>
+            <p id="previewPhone">[Phone]</p>
+            <hr>
+            <h3>Summary</h3>
+            <p id="previewSummary">[Summary]</p>
+            <h3>Experience</h3>
+            <p id="previewExperience">[Experience]</p>
+            <h3>Education</h3>
+            <p id="previewEducation">[Education]</p>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
